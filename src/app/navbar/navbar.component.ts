@@ -1,20 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule ],
+  imports: [CommonModule, RouterLink ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
   menuItems = [
-    { label: 'Acasa', path: '#' },
-    { label: 'Despre Mine', path: '#' },
-    { label: 'Portofoliu', path: '#' },
-    { label: 'Testimoniale', path: '#' },
-    { label: 'Contact', path: '#' },
-    { label: 'Q&A', path: '#' }
+    { label: 'Acasa', routerLink: '/' },
+    { label: 'Despre Mine', routerLink: '/about-me' },
+    { label: 'Portofoliu', routerLink: '/portfolio' },
+    { label: 'Testimoniale', routerLink: '/testimonials' },
+    { label: 'Contact', routerLink: '/contact' },
+    { label: 'Q&A', routerLink: '/qa' }
   ];
 }
