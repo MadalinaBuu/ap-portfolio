@@ -1,0 +1,32 @@
+
+
+  .about-me {
+    padding-top: 2rem;
+    padding-right: 5rem;
+  }
+.custom-image {
+    width: 300px; /* Dimensiunea dorită pentru imagine */
+    height: 300px; /* Asigură proporții pătrate */
+    object-fit: cover; /* Taie marginile dacă imaginea nu este pătrată */
+    border: 3px solid #ccc; /* Opțional: margine pentru imagine */
+  }
+
+  @media (max-width: 1250px){
+    .about-me{
+
+      padding-right: 2rem;
+    }
+  }
+  
+
+  @media (max-width: 900px) {
+    .about-me {
+      text-align: center;
+      padding-top: 2rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    .text-center{
+      padding-bottom: 1rem;
+    }
+  }

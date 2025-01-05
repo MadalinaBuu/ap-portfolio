@@ -1,0 +1,82 @@
+@import '../../variables';
+
+footer {
+    background-color: $another-blue;
+    margin-top: 3rem;
+    padding-top: 1rem;
+
+    .logo {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .social_links {
+        padding-left: 2.5rem;
+
+        a {
+            color: black;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    .menu {
+
+        padding-right: 2.5rem;
+    }
+
+    .list-unstyled {
+        a {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    ul.custom-align-right {
+        float: right;   /* Muta întreaga listă la dreapta */
+        padding: 0;
+        margin: 0; /* Elimina marginile implicite */
+      }
+      
+      ul.custom-align-right li a {
+        text-align: left !important; /* Aliniaza textul la stânga în interiorul <a> */
+        display: block;  /* Transformă <a> într-un bloc pentru a aplica corect alinierea */
+        margin-bottom: 10px;
+      }
+
+      .copyright{
+        padding-top: 1rem;
+        font-size: 13px;
+        font-style: italic;
+      }
+}
+
+
+@media (max-width: 900px) {
+    footer {
+        
+    .menu{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+    }
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 2rem;
+
+        .social_links{
+            padding-left: 0;
+        }
+    }
+    
+}

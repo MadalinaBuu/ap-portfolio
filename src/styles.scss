@@ -2,4 +2,20 @@
 
 body{
     background-color: $some-white;
+
+    .btn-primary{
+        background-color: $blue;
+        border-color: $blue;
+    }
+
+    .btn-primary:hover {
+        background-color: $blue-darker; /* Culoare la hover */
+        border-color: $blue-darker;   /* Culoarea bordurii */
+      }
+      
+      .btn-primary:active,
+      .btn-primary.active {
+        background-color: $blue-darker; /* Culoare la active */
+        border-color: $blue-darker;    /* Culoarea bordurii */
+      }
 }

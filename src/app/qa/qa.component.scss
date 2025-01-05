@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem rgb(52 194 249 / 43%);
+.accordion-button{
+    //::after{
+        background-color: $another-blue !important;
+    //}
+    //box-shadow: 0 0 0 0.1rem rgba(13, 185, 253, 0.747);
+    :focus{
+        box-shadow: none !important;
+    }
+}
+
+}

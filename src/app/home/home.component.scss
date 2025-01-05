@@ -1,0 +1,39 @@
+@import '../../variables';
+.carousel{
+  //padding-top: 1rem;
+.carousel-inner {
+    height: 500px; /* Setează înălțimea dorită pentru carusel */
+    @media (max-width: 900px) {
+      height: 350px;
+    }
+    .carousel-item img {
+      height: 100%; /* Setează înălțimea imaginii să fie egală cu cea a caruselului */
+      object-fit: cover; /* Taie marginile pentru a umple spațiul fără deformare */
+      width: 100%; /* Păstrează lățimea completă */
+    }
+  }
+}
+
+.contact{
+  background-color: $another-blue;
+  font-size: 20px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  a{
+    color: $blue-darker;
+
+    &:hover{
+      color: $some-white;
+
+    }
+  }
+  
+  @media (max-width: 900px) {
+    font-size: 15px; /* Font mai mic pentru ecrane sub 768px */
+  }
+}

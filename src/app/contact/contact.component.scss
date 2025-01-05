@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.contact {
+    text-align: center;
+    padding-top: 2rem;
+
+    &_details {
+        padding-top: 1rem;
+    }
+
+    h4 {
+        padding-top: 1rem;
+    }
+
+    &_social_links {
+        padding-top: 1rem;
+
+        a{
+            color: $blue;
+
+            &:hover {
+                color: $blue-darker;
+              }
+        }
+    }
+}

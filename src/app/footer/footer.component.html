@@ -1,0 +1,57 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<footer>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 left">
+          <div class="row">
+            <div class="col-sm-12">
+              <a href="#"><img src="/images/P-blue.png" alt="Logo" class="logo"/></a>
+            </div>
+            <div class="col-sm-12">
+              <div class="social_links">
+                  <a href="https://www.facebook.com/profile.php?id=100066476321727" target="_blank" class="me-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="https://www.instagram.com/paul.alexe.fotograf/" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                </div></div>
+          </div>
+                
+
+        </div>
+        <div class="col-md-6 col-sm-12 menu">
+            <ul class="list-unstyled custom-align-right">
+                <li *ngFor="let item of menuItems">
+                  <a [routerLink]="item.routerLink">{{ item.label }}</a>
+                </li>
+              </ul>
+        </div>
+
+        <p class="copyright text-center">© 2025 Paul Alexe. Toate drepturile rezervate.</p>
+    </div>
+
+    <!-- <div class="contact-info">
+      <p>Email: <a href="mailto:contact@numele-tau.ro"></a></p>
+      <p>Telefon: <a href="tel:+40712345678">+40 712 345 678</a></p>
+    </div>
+  
+    <div class="social-links">
+      <a href="https://www.instagram.com/numele-tau" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/numele-tau" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  
+    <nav>
+      <a href="/portofoliu">Portofoliu</a> | 
+      <a href="/servicii">Servicii</a> | 
+      <a href="/despre-mine">Despre mine</a> | 
+      <a href="/contact">Contact</a>
+    </nav>
+  
+    <p class="copyright">© 2025 Numele Tău. Toate drepturile rezervate.</p> -->
+  </footer>
+  

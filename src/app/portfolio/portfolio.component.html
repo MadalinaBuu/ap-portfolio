@@ -1,1 +1,45 @@
-<p>portfolio works!</p>
+<div class="container">
+    <!-- Butoane Categorii -->
+    <div class="btn-group my-3">
+      <button 
+        *ngFor="let category of categories"
+        class="btn btn-primary"
+        [class.active]="category === selectedCategory"
+        (click)="selectCategory(category)">
+        {{ category }}
+      </button>
+    </div>
+  
+    <!-- Subsectiuni -->
+    <div *ngFor="let section of photos[selectedCategory]" class="mb-4">
+      <h5>{{ section.subcategory }}</h5>
+      <div class="row">
+        <div *ngFor="let image of section.images" class="col-md-4 mb-3">
+            <div class="card">
+                <img [src]="'/images/evenimente/' + section.folder + '/' + image" 
+                     class="card-img-top" 
+                     (click)="openModal('/images/evenimente/' + section.folder + '/' + image)" 
+                     alt="{{ section.subcategory }}">
+              </div>
+        </div>
+        <button class="btn btn-primary">
+          <a [href]="section.link" target="_blank">Vezi mai multe fotografii</a>
+        </button>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Zoom imagine</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body text-center">
+          <img [src]="selectedImage" class="img-fluid" alt="Zoom imagine">
+        </div>
+      </div>
+    </div>
+  </div>
